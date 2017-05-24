@@ -1,10 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import AppContainer from "./src/containers/AppContainer";
 
-const Greeting = ({ name }) => (
-  <p>
-    Hello, {name}!
-  </p>
-);
-
-ReactDOM.render(<Greeting name="Reign" />, document.getElementById('root'));
+ReactDOM.render(<AppContainer />, document.getElementById("root"));
