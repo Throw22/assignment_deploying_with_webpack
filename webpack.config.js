@@ -26,7 +26,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin(),
+    //new webpack.optimize.UglifyJsPlugin(),
     new CopyWebpackPlugin([{ from: 'index.html', to: 'index.html' }])
   ]
 };

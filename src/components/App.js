@@ -1,13 +1,15 @@
-import React from "react";
+import React from 'react';
 
-const App = ({
-  isFetching,
-  city,
-  min_temp,
-  max_temp,
-  the_temp,
-  weather_state_abbr
-}) => {
+const App = (
+  {
+    isFetching,
+    city,
+    min_temp,
+    max_temp,
+    the_temp,
+    weather_state_abbr
+  }
+) => {
   if (isFetching) {
     return <p>Loading...</p>;
   }
@@ -18,7 +20,7 @@ const App = ({
         {`Today's weather for ${city}`}
       </div>
       <div>
-      Current Temperature: {the_temp}
+        Current Temperature: {the_temp}
       </div>
       <div>
         Minimum Temperature: {min_temp}
